@@ -1,0 +1,56 @@
+:root {
+    --text-color : #000000 ;
+}
+
+* {
+    box-sizing: border-box;
+}
+.list-container {
+    max-height: 18rem;
+    overflow: overlay;
+}
+.list-container::-webkit-scrollbar-track {
+    background-color: #FEFFD2;
+    border-radius: 10px;
+}
+.list-container::-webkit-scrollbar {
+    width: 7px;
+}
+.list-container::-webkit-scrollbar-thumb {
+    background-color: #f98131;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: #ffeb9c;
+    padding:0.5rem 1.5rem;
+    border-radius: 20px;
+    width: 85%;
+    transition: 0.2s ease-in;
+}
+.item {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.complete-button,
+.edit-button,
+.del-button {
+    padding:0.3rem;
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+.complete-button:hover,
+.edit-button:hover,
+.del-button:hover {
+    transform: scale(1.2);
+}
+#item-complete {
+    text-decoration: line-through;
+    opacity: 0.7;
+    background-color: #feffd1;
+}
