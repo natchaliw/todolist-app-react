@@ -1,12 +1,13 @@
 :root {
-    --text-color : #000000 ;
+    --color1: rgba(255, 125, 41, 1);
+    --color2: rgba(0, 37, 148, 1)
 }
 
 * {
     box-sizing: border-box;
 }
 .list-container {
-    max-height: 18rem;
+    max-height: 17rem;
     overflow: overlay;
 }
 .list-container::-webkit-scrollbar-track {
@@ -17,7 +18,7 @@
     width: 7px;
 }
 .list-container::-webkit-scrollbar-thumb {
-    background-color: #f98131;
+    background-color: var(--color1);
 }
 .list-item {
     display: flex;
@@ -25,7 +26,7 @@
     align-items: center;
     margin: auto;
     margin-bottom: 1rem;
-    background-color: #ffeb9c;
+    background-color: #ffe789;
     padding:0.5rem 1.5rem;
     border-radius: 20px;
     width: 85%;
@@ -33,8 +34,8 @@
 }
 .item {
     font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-color);
+    font-weight: 600;
+    color: var(--color2);
 }
 .complete-button,
 .edit-button,

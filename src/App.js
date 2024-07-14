@@ -67,7 +67,7 @@ function App() {
     <div className="app">
       <div className="container">
         <div className="title-header">
-          <h1>To Do List</h1>
+          <h1>To Do <span>List !</span></h1>
         </div>
         {alert.show && <ALert {...alert} setAlert={setAlert} list={list}/>}
         <form 
